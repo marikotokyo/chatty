@@ -41,10 +41,10 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references|null: false, foreign_key: true|
-|group_id|references|null: false, foreign_key: true|
-|body|text|null: false|
-|image|text| |
+|user_id|references|false, foreign_key: true|
+|group_id|references|foreign_key: true|
+|content|string| |
+|image|string| |
 
 ### Association
 - belongs_to :group
